@@ -21,4 +21,3 @@ public class StackPrac {
         System.out.println(st + "->" + st.peek() + " " + st.size());
     }
 }
-// ...
