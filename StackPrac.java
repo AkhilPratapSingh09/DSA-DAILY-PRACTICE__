@@ -23,4 +23,4 @@ public class StackPrac {
 }
 
 
-// gueohfufh fdbvkxlmmdf nbkm.lwdmdmv bkml;kvlcxvmdsm,
+// gueohfufh fdbvkxlmmdf nbkm.l
