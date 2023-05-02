@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ReverseanArray{
   public static void display(int[] a){
-    StringBuilder sb = new StringBuilder();
+    StringBuilderbase sb = new StringBuilderbase();
 
     for(int val: a){
       sb.append(val + " ");
