@@ -9,5 +9,10 @@ public class StringBuilderbase {
 
         sb.setCharAt(0, 'd');
         System.out.println(sb);
+
+        sb.insert(2, '3');
+        System.out.println(sb);
+
+        
     }   
 }
