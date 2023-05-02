@@ -5,7 +5,7 @@ public class StringBuilderbase {
         System.out.println(sb);
 
         char ch = sb.charAt(0);
-        System.out.println(sb);
+        System.out.println(ch);
 
         sb.setCharAt(0, 'd');
         System.out.println(sb);
@@ -15,5 +15,10 @@ public class StringBuilderbase {
 
         sb.deleteCharAt(2);
         System.out.println(sb);
+
+        sb.append('g');
+        System.out.println(sb);
+
+        System.out.println(sb.length());
     }   
 }
