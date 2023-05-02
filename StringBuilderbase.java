@@ -13,6 +13,7 @@ public class StringBuilderbase {
         sb.insert(2, '3');
         System.out.println(sb);
 
-        
+        sb.deleteCharAt(2);
+        System.out.println(sb);
     }   
 }
