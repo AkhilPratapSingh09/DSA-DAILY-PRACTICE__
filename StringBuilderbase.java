@@ -7,6 +7,7 @@ public class StringBuilderbase {
         char ch = sb.charAt(0);
         System.out.println(sb);
 
-        
+        sb.setCharAt(0, 'd');
+        System.out.println(sb);
     }   
 }
