@@ -4,6 +4,9 @@ public class StringBuilderbase {
         StringBuilder sb= new StringBuilder("hello");
         System.out.println(sb);
 
+        char ch = sb.charAt(0);
+        System.out.println(sb);
+
         
     }   
 }
