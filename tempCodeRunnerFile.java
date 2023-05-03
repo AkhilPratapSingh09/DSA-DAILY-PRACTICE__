@@ -1,1 +1,1 @@
-DiffOfTwoArr
+printIncreasing(n);
