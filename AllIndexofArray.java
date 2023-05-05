@@ -1,13 +1,15 @@
+import java.io.BufferedReader;
+import java.io.*;
 import java.util.*;
 public class AllIndexofArray {
-    public static void main(String[]args){
-        Scanner scn = new Scanner(System.in);
-        int n= scn.nextInt();
+    public static void main(String[]args)throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n= Integer.parseInt(br.readLine());
         int []arr = new int[n];
-        for(int i=0;i<arr.length; i++){
-            arr[i]= scn.nextInt();
+        for(int i=0;i<n; i++){
+            arr[i]= Integer.parseInt(br.readLine());
         }
-        int x =scn.nextInt();
+        int x =Integer.parseInt(br.readLine());
         int []iarr = allIndices(arr,x,0,0);
 
         if(iarr.length == 0){
@@ -22,6 +24,16 @@ public class AllIndexofArray {
         if(idx == arr.length){
             return new int[fsf];
         }
-        if(arr[idx])
+        if(arr[idx] == x){
+            int[] iarr= allIndices(arr, x, idx+1, fsf+1);
+            iarr[fsf] = idx;
+            return iarr;
+
+        }else{
+            int []iarr= allIndices(arr, x, idx + 1, fsf);
+            return iarr;
+        }
+        
+    
     }
 }
