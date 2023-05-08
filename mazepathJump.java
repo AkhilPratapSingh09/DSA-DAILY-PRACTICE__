@@ -37,4 +37,3 @@ public class mazepathJump {
         return paths;
     }
 }
-// tfiyugij
