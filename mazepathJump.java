@@ -37,4 +37,4 @@ public class mazepathJump {
         return paths;
     }
 }
-// tfiyugijokml,
+// tfiyugij
