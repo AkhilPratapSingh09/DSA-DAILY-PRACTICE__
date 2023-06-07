@@ -31,4 +31,4 @@ public class minimumCostPath {
         System.out.println(dp[0][0]);
     }
 }
-easrdtf8yguhijpok[plkojihgjgcfhxgdfchgvhkhiljok]
+easrdtf8yguhijpok[plkojihgjgcfhxgdfch
