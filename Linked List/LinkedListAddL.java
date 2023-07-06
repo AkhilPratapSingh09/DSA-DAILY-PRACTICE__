@@ -44,7 +44,7 @@ public class LinkedListAddL{
         }
         Node temp=head;
         while(temp!=null){
-            System.out.println(temp.data+" ");
+            System.out.print(temp.data+" ");
             temp=temp.next;
         }
         System.out.println();
@@ -52,8 +52,10 @@ public class LinkedListAddL{
 
 
     public static void main(String[]args){
-        LinkedListADD ll= new LinkedListADD();
+        LinkedListAddL ll= new LinkedListAddL();
         ll.addFirst(1);
+        
         ll.addFirst(2);
+        ll.print();
     }
 }
