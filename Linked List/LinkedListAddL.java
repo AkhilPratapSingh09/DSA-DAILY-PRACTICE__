@@ -1,4 +1,4 @@
-public class LinkedListADD{
+public class LinkedListAddL{
     public static class Node{
     int data;
     Node next;
@@ -13,7 +13,7 @@ public class LinkedListADD{
     public static Node tail;
 
     public void addFirst(int data){
-         //step1= create new node
+         //step1= create new nod
         Node newNode= new Node(data);
         if(head==null){
             head=tail=newNode;
@@ -26,6 +26,16 @@ public class LinkedListADD{
 
         //step3- head = newNode
         head= newNode;
+    }
+    public void addLast(int data){
+        Node newNode = new Node(data);
+        if(head==null){
+          head =tail=newNode;
+            return;
+        }
+        tail.next=newNode;
+
+        tail=newNode;
     }
 
     public static void main(String[]args){
