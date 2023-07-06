@@ -1,4 +1,5 @@
-public class LinkedListAddL{
+
+public class LLprint{
     public static class Node{
     int data;
     Node next;
@@ -50,10 +51,11 @@ public class LinkedListAddL{
         System.out.println();
     }
 
-
     public static void main(String[]args){
-        LinkedListADD ll= new LinkedListADD();
+        LLprint ll= new LLprint();
         ll.addFirst(1);
         ll.addFirst(2);
+        ll.addLast(4);
+
     }
 }
