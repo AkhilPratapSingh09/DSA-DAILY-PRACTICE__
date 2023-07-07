@@ -11,10 +11,12 @@ public class LinkedListAddL{
 }
     public static Node head;
     public static Node tail;
+    public static int size;
 
     public void addFirst(int data){
          //step1= create new nod
         Node newNode= new Node(data);
+        size++;
         if(head==null){
             head=tail=newNode;
             return;
@@ -29,6 +31,7 @@ public class LinkedListAddL{
     }
     public void addLast(int data){
         Node newNode = new Node(data);
+        size++;
         if(head==null){
           head =tail=newNode;
             return;
@@ -55,6 +58,7 @@ public class LinkedListAddL{
             return;
         }
         Node newNode= new Node(data);
+        size++;
         Node temp=head;
         int i=0;
 
@@ -75,5 +79,6 @@ public class LinkedListAddL{
         ll.addFirst(2);
         ll.add(2,6);
         ll.print();
+        System.out.println(ll.size);
     }
 }
