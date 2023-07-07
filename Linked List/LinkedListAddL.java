@@ -70,6 +70,22 @@ public class LinkedListAddL{
         newNode.next = temp.next;
         temp.next= newNode;
     }
+    public int removeFirst(){
+        if(size==0){
+            System.out.println("LL is Empty");
+            return Integer.MIN_VALUE;
+        }
+        else if(size==1){
+            int val= head.data;
+            head=tail=null;
+            size=0;
+            return val;
+        }
+        int val= head.data;
+        head=head.next;
+        size--;
+        return val;
+    }
 
 
     public static void main(String[]args){
@@ -80,5 +96,8 @@ public class LinkedListAddL{
         ll.add(2,6);
         ll.print();
         System.out.println(ll.size);
+
+        ll.removeFirst();
+        ll.print();
     }
 }
