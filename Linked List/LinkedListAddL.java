@@ -125,6 +125,19 @@ public class LinkedListAddL{
         //key not found 
         return -1;
     }
+    public void reverse(){
+        Node prev=null;
+        Node curr= tail=head;
+        Node next;
+
+        while(curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        head = prev;
+    }
 
     public static void main(String[]args){
         LinkedListAddL ll= new LinkedListAddL();
@@ -142,5 +155,8 @@ public class LinkedListAddL{
 
         System.out.println(ll.itrSearch(1));
         System.out.println(ll.itrSearch(11));
+
+        ll.reverse();
+        ll.print();
     }
 }
