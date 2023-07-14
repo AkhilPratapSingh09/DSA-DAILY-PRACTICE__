@@ -42,4 +42,4 @@ public class MatrixMultiplication {
     }
 }
 
-// vfubijnvkbmnjbfhjmbk
+vfubijnvkbmnjbfhjmbk
