@@ -1,4 +1,13 @@
-class BinaryTree
+import java.util.*;
+class PreOrder{
+     class Node {
+    int data;
+    Node left, right;
+   Node(int item)    {
+        data = item;
+        left = right = null;
+    }
+    class BinaryTree
 {
     //Function to return a list containing the preorder traversal of the tree.
    
@@ -14,4 +23,6 @@ class BinaryTree
         return List;
     }
 
+}
+}
 }
